@@ -12,7 +12,6 @@ subset_data <- subset(data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02
 subset_data$datetime <- strptime(paste(subset_data$Date, subset_data$Time), "%Y-%m-%d %H:%M:%S")
 
 #Plotting data
-par(mfrow=c(1,2))
 attach(data)
 hist(Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "Red")
 

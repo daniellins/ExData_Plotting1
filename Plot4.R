@@ -1,6 +1,6 @@
 
 #loading data
-data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
+data <- read.table("data/household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
 
 #convert data column
 data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
